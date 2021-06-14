@@ -1,0 +1,8 @@
+db:
+  host: 'localhost'
+  username: 'api_user'
+  password: 'postgresdbd3v!329'
+  synchronize: true
+
+jwt:
+  secret: 'sUperT0pS3cret91'
