@@ -58,6 +58,30 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Deploy
+
+Tip before deploying to production.
+
+I highly recommend you to run the **prestart:prod** script.
+
+**Why?**
+
+It could be that you have some minor issues with import paths that still
+work in development mode. This is especially common when auto-importing files.
+
+It is very easy to catch these issues with this NPM command, as it builds
+the application into JavaScript. If any errors show up, they should be very
+easy to fix.
+
+If you don't do this, and the errors only appear after deploying the
+application to Cloud provider, it will be annoying and will take a long time to debug and understand what exactly went wrong.
+
+**How?**
+
+```bash
+$ npm run prestart:prod
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
